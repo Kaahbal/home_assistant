@@ -1,0 +1,6 @@
+platform: kodi
+host: !secret kodi_host
+name: Kodi
+icon: mdi:kodi
+username: !secret kodi_user
+password: !secret kodi_password

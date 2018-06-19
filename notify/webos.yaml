@@ -1,0 +1,4 @@
+platform: webostv
+host: !secret lgtv_host
+name: webos
+filename: webostv.conf

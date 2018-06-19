@@ -1,0 +1,8 @@
+alarm_pending_loop_start:
+  alias: alarm_pending_loop_start
+  sequence:
+    - service: media_player.sonos_snapshot
+      entity_id: "media_player.kitchen"
+    - delay: "00:00:01"
+    - service: script.turn_on
+      entity_id: script.alarm_pending_loop

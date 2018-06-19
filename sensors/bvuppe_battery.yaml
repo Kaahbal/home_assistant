@@ -1,0 +1,6 @@
+platform: template
+sensors:
+  siren_bvuppe_battery:
+    value_template: '{{ states.zwave.bvuppe.attributes.battery_level }}'
+    unit_of_measurement: '%'
+    friendly_name: 'BV Uppe Batteri'

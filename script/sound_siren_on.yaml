@@ -1,0 +1,26 @@
+sound_siren_on:
+  alias: sound_siren_on
+  sequence:
+    - service: automation.turn_off
+      entity_id: automation.alarm_trigger_bv
+      data:
+        entity_id: switch.siren_switch
+    - service: switch.turn_on
+      data:
+        entity_id: switch.switch
+    - service: switch.turn_on
+      data:
+        entity_id: switch.switch_2
+    - service: media_player.sonos_snapshot
+      entity_id:
+        - media_player.kitchen
+        - media_player.livingroom
+        - media_player.bedroom
+    - service: media_player.play_media
+      data:
+        entity_id: 
+          - media_player.kitchen
+          - media_player.livingroom
+          - media_player.bedroom
+        media_content_type: wav
+        media_content_id: !secret siren

@@ -1,0 +1,6 @@
+platform: sl
+name: Farsta Centrum
+ri4key: !secret api_sl
+siteid: 9181
+lines: 18
+direction: 1

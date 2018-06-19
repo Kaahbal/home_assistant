@@ -1,0 +1,13 @@
+platform: template
+sensors:
+  siren_bvuppe_status:
+    value_template: '{% if states.switch.switch_2 %}
+          {% if states.switch.switch_2.state == "on" %}
+            ALARM
+          {% else %}
+            Ready
+          {% endif %}
+          {% else %}
+          n/a
+          {% endif %}'
+    friendly_name: 'Brandvarnare Uppe'

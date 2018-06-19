@@ -1,0 +1,8 @@
+alarm_triggered_home:
+  alias: alarm_triggered_home
+  sequence:
+    - service: script.turn_on
+      data:
+        entity_id: script.alarm_photo_silent
+    - service: homeassistant.turn_on
+      entity_id: switch.housealarm_switch_10_0

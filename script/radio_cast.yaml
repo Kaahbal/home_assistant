@@ -1,0 +1,14 @@
+radio_cast:
+  alias: Cast Selected Radio on Sonos Speakers
+  sequence:
+    -  service: media_player.play_media
+       data_template:
+         entity_id: >
+          {% if is_state("input_select.speakers", "Kitchen") %} media_player.kitchen
+          {% elif is_state("input_select.speakers", "Livingroom") %} media_player.livingroom
+          {% elif is_state("input_select.speakers", "Bedroom") %} media_player.bedroom
+          {% endif %}
+         media_content_id: >
+          {% if is_state("input_select.radio_station", "Jayan Radio") %} !secret radio_url
+          {% endif %}
+         media_content_type: 'audio/mp4'

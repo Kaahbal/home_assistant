@@ -1,0 +1,16 @@
+alarm_pending_sound:
+  alias: alarm_pending_sound
+  sequence:
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.kitchen
+        media_content_type: wav
+        media_content_id: !secret beep
+    - delay: "00:00:01"
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.kitchen
+        media_content_type: wav
+        media_content_id: !secret beep
+    - service: script.turn_on
+      entity_id: script.alarm_pending_loop

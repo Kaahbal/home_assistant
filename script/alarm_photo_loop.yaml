@@ -1,0 +1,8 @@
+alarm_photo_loop:
+  alias: alarm_photo_loop
+  sequence:
+    - delay:
+        seconds: 5
+    - service: script.turn_on
+      data:
+        entity_id: script.alarm_photo

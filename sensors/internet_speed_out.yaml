@@ -1,0 +1,6 @@
+platform: template
+sensors:
+  internet_speed_out:
+    friendly_name: 'Internet Speed OUT'
+    value_template: '{{ ((states.input_number.internet_traffic_delta_out.state | float ) / 1000000 ) | round(2) }}'
+    unit_of_measurement: 'Mbps'

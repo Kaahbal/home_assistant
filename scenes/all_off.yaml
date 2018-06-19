@@ -1,0 +1,27 @@
+#
+
+# All Lights Off
+
+#
+
+- name: All Lights Off
+
+  entities:
+    light.hallway:
+      state: off
+      brightness: 0
+    light.kitchen_window:
+      state: off
+      brightness: 0
+    light.livingroom:
+      state: off
+      brightness: 0
+    light.upper_hallway:
+      state: off
+      brightness: 0
+    light.kontoret: off
+    switch.sovrumsfonster: off
+    switch.clara_slinga: off
+    switch.nattduksbord_micaela: off
+    switch.nattduksbord_calle: off
+    switch.ovre_hall: off

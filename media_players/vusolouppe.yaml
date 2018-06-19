@@ -1,0 +1,4 @@
+platform: enigma
+host: !secret vu_uppe_host
+name: Vu-Solo2
+icon: mdi:satellite-variant

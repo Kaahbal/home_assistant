@@ -1,0 +1,13 @@
+platform: template
+sensors:
+  door_status:
+    value_template: '{% if states.binary_sensor.ytterdorr_sensor %}
+          {% if states.binary_sensor.ytterdorr_sensor.state == "on" %}
+            Open
+          {% else %}
+            Closed
+          {% endif %}
+          {% else %}
+          n/a
+          {% endif %}'
+    friendly_name: 'Ytterdörr'

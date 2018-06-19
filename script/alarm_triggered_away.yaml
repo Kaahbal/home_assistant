@@ -1,0 +1,22 @@
+alarm_triggered_away:
+  alias: alarm_triggered_away
+  sequence:
+    - service: script.turn_on
+      entity_id: script.say
+      data:
+        variables:
+          where: 'kitchen'
+          what: 'Alarm triggered, notifying the Arnehed Family'
+    - delay:
+        seconds: 2
+    - service: script.turn_on
+      data:
+        entity_id: script.light_flash
+    - service: script.turn_on
+      data:
+        entity_id: script.alarm_photo
+    - service: script.turn_on
+      data:
+        entity_id: script.sound_siren_on
+    - service: homeassistant.turn_on
+      entity_id: switch.housealarm_switch_10_0

@@ -1,0 +1,18 @@
+#
+
+# Dim Downstairs
+
+#
+
+- name: Dim Downstairs
+
+  entities:
+    light.hallway:
+      state: on
+      brightness: 80
+    light.kitchen_window:
+      state: on
+      brightness: 80
+    light.livingroom:
+      state: on
+      brightness: 80

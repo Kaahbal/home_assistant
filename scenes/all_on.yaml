@@ -1,0 +1,27 @@
+#
+
+# All Lights On
+
+#
+
+- name: All Lights On
+
+  entities:
+    light.hallway:
+      state: on
+      brightness: 255
+    light.kitchen_window:
+      state: on
+      brightness: 255
+    light.livingroom:
+      state: on
+      brightness: 255
+    light.upper_hallway:
+      state: on
+      brightness: 255
+    light.kontoret: on
+    switch.sovrumsfonster: on
+    switch.clara_slinga: on
+    switch.nattduksbord_micaela: on
+    switch.nattduksbord_calle: on
+    switch.ovre_hall: on

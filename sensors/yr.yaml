@@ -1,0 +1,7 @@
+platform: yr
+forecast: 24
+monitored_conditions:
+  - temperature
+  - symbol
+  - windSpeed
+  - humidity

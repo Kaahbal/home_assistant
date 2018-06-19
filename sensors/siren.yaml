@@ -1,0 +1,13 @@
+platform: template
+sensors:
+  siren_status:
+    value_template: '{% if states.switch.siren_switch %}
+          {% if states.switch.siren_switch.state == "on" %}
+            ALARM
+          {% else %}
+            Ready
+          {% endif %}
+          {% else %}
+          n/a
+          {% endif %}'
+    friendly_name: 'Alarm Siren'

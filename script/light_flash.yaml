@@ -1,0 +1,14 @@
+light_flash:
+  alias: light_flash
+  sequence:
+    - service: homeassistant.turn_on
+      data:
+        entity_id: group.ned
+    - delay:
+        seconds: 1
+    - service: homeassistant.turn_off
+      data:
+        entity_id: group.ned
+    - service: script.turn_on
+      data:
+        entity_id: script.light_loop

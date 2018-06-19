@@ -1,0 +1,16 @@
+sound_siren_off:
+  alias: sound_siren_off
+  sequence:
+    - service: switch.turn_off
+      data:
+        entity_id: switch.siren_switch
+    - service: switch.turn_off
+      data:
+        entity_id: switch.switch
+    - service: switch.turn_off
+      data:
+        entity_id: switch.switch_2
+    - delay: 5
+    - service: automation.turn_on
+      data:
+        entity_id: automation.alarm_trigger_bv

@@ -1,0 +1,11 @@
+alarm_bv:
+  alias: alarm_bv
+  sequence:
+    - service: notify.telegram
+      data:
+        title: BRANDLARM
+        message: 'BRANDLARM UTLÖST'
+        data:
+          photo:
+            - url: !secret fire_img
+              caption: BRANDLARM

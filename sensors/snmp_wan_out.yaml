@@ -1,0 +1,5 @@
+platform: snmp
+name: snmp_wan_out
+host: 192.168.0.1
+community: Grisen
+baseoid: 1.3.6.1.2.1.2.2.1.16.4

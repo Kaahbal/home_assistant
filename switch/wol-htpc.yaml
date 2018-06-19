@@ -1,0 +1,5 @@
+platform: wake_on_lan
+mac_address: !secret htpc_mac
+name: HTPC
+host: !secret htpc_host
+broadcast_address: !secret broadcast_host

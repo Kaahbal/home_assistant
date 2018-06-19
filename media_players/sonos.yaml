@@ -1,0 +1,5 @@
+platform: sonos
+hosts:
+  - !secret sonos1
+  - !secret sonos2
+  - !secret sonos3

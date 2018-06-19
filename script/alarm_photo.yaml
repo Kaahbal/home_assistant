@@ -1,0 +1,17 @@
+alarm_photo:
+  alias: alarm_photo
+  sequence:
+    - service: notify.telegram
+      data:
+        title: LARM
+        message: 'LARM UTLÖST'
+        data:
+          photo:
+            - url: !secret kcam_url
+              authention: 'NIPCA'
+              username: !secret cam_user
+              password: !secret cam_password
+              caption: Alarm triggerd
+    - service: script.turn_on
+      data:
+        entity_id: script.alarm_photo_loop

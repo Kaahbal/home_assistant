@@ -1,0 +1,6 @@
+platform: sl
+name: TCentralen
+ri4key: !secret api_sl
+siteid: 9001
+lines: 18
+direction: 2

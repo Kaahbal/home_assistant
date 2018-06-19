@@ -1,0 +1,3 @@
+platform: statistics
+name: 'WAN Traffic In'
+entity_id: sensor.internet_speed_in
