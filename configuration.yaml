@@ -1,0 +1,53 @@
+### CORE ###
+homeassistant:
+  name: Home
+  latitude: 59.245452
+  longitude: 18.093857
+  elevation: 50
+  unit_system: metric
+  time_zone: Europe/Stockholm
+  customize: !include_dir_merge_named customizations
+frontend:
+  themes: !include_dir_merge_named themes
+http:
+  api_password: !secret api_password
+  base_url: !secret base_url
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+### BASICS ###
+config:
+conversation:
+discovery: !include config/discovery.yaml
+group: !include config/groups.yaml
+history: !include config/history.yaml
+logbook: !include config/logbook.yaml
+map:
+notify: !include_dir_list notify
+recorder: !include config/recorder.yaml
+sun:
+tts: !include config/tts.yaml
+updater:
+zone: !include_dir_list zones
+### COMPONENTS ###
+camera: !include_dir_list cameras
+device_tracker: !include_dir_list devices
+ios:
+wake_on_lan:
+light: !include_dir_list lights
+switch: !include_dir_list switch
+media_player: !include_dir_list media_players
+sensor: !include_dir_list sensors
+tellduslive:
+telegram_bot: !include config/telegram.yaml
+zwave: !include config/zwave.yaml
+### SCRIPTS / AUTOMATIONS / EXTRAS ###
+alarm_control_panel: !include config/alarm.yaml
+automation: !include_dir_list automation
+binary_sensor: !include_dir_list binary_sensors
+input_boolean: !include_dir_merge_named input_boolean
+scene: !include_dir_merge_list scenes
+script: !include_dir_merge_named script
+shell_command: !include config/shell.yaml
+input_select: !include config/input_select.yaml
+input_number: !include config/input_number.yaml
+weblink: !include config/weblink.yaml 
