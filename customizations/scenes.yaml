@@ -1,0 +1,12 @@
+scene.all_on:
+  friendly_name: "Tänd alla lampor"
+  emulated_hue: true
+  emulated_hue_name: All lights on
+scene.all_off:
+  friendly_name: "Släck alla lampor"
+  emulated_hue: true
+  emulated_hue_name: All lights off
+scene.dim_downstairs:
+  friendly_name: "Dimma nedervåning"
+  emulated_hue: true
+  emulated_hue_name: Dim downstairs

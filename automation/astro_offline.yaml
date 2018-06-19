@@ -1,0 +1,10 @@
+alias: astro_offline
+trigger:
+  platform: state
+  entity_id: device_tracker.astro
+  from: 'home'
+  to: 'not_home'
+action:
+  service: notify.telegram
+  data:
+    message: 'Astro är OFFLINE'

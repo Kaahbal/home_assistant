@@ -1,0 +1,4 @@
+platform: generic
+name: Väder Stockholm
+still_image_url: !secret cam2
+content_type: 'image/svg+xml'

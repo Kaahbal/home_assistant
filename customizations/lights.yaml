@@ -1,0 +1,24 @@
+light.livingroom:
+  friendly_name: Vardagsrum
+  icon: mdi:lamp
+light.kitchen_window:
+  friendly_name: 'Köksfönster'
+  icon: mdi:lamp
+light.hallway:
+  friendly_name: Hallen
+  icon: mdi:lamp
+light.upper_hallway:
+  friendly_name: "Sensor Övre Hall"
+  icon: mdi:eye
+light.library:
+  friendly_name: "Övre hallen"
+  icon: mdi:lamp
+light.kontoret:
+  friendly_name: 'Kontoret'
+  emulated_hue: 'True'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_name: "Office"
+light.vardagsrum:
+  friendly_name: 'Vardagsrumstak'
+  icon: mdi:ceiling-light

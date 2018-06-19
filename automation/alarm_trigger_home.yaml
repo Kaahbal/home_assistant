@@ -1,0 +1,17 @@
+alias: alarm_trigger_home
+trigger:
+  - platform: state
+    entity_id: sensor.door_status
+    to: 'Open'
+  - platform: state
+    entity_id: sensor.window_status
+    to: 'Open'
+condition:
+  - condition: state
+    entity_id: alarm_control_panel.ha_alarm
+    state: armed_home
+action:
+  - service: alarm_control_panel.alarm_trigger
+    entity_id: alarm_control_panel.ha_alarm
+  - service: script.turn_on
+    entity_id: script.alarm_triggered_home

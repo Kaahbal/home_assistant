@@ -1,0 +1,3 @@
+platform: mjpeg
+name: Köket
+mjpeg_url: !secret cam8

@@ -1,0 +1,300 @@
+﻿default_view:
+    view: yes
+    icon: mdi:home 
+    entities:
+      - device_tracker.cjas_iphone_7
+      - device_tracker.micaela
+      - sensor.cjserver
+      - alarm_control_panel.ha_alarm
+      - group.kamera
+      - group.ned
+      - group.kamera2
+      - group.upp
+      - group.mys
+      - group.fans
+      - group.clara_sleep
+      - device_tracker.madde
+      - device_tracker.paul
+      - device_tracker.susannsiphone2
+
+devis:
+  name: Enheter
+  entities:
+    - binary_sensor.device_tracker_astro
+    - binary_sensor.device_tracker_calledator
+    - binary_sensor.device_tracker_micaeladator
+    - binary_sensor.device_tracker_lgoledtv
+    - binary_sensor.device_tracker_htpc
+    - binary_sensor.device_tracker_vusoloner
+    - binary_sensor.device_tracker_vusoloupp
+    - binary_sensor.device_tracker_sonoskitchen
+    - binary_sensor.device_tracker_sonoslivingroom
+    - binary_sensor.device_tracker_echolivingroom
+    - binary_sensor.device_tracker_sonosbedroom
+    - binary_sensor.device_tracker_rtac68u
+    - binary_sensor.device_tracker_rtac66u
+    - binary_sensor.device_tracker_pihole
+    - binary_sensor.device_tracker_dlinkcamkitchen
+    - binary_sensor.device_tracker_dlinkcamclara
+    - binary_sensor.device_tracker_printer
+    - binary_sensor.device_tracker_chromecast
+    - binary_sensor.device_tracker_playstation4pro
+    - binary_sensor.device_tracker_nintendoswitch
+    - binary_sensor.device_tracker_retropie
+
+doorwindows:
+  name: Dörrar / Fönster
+  entities:
+    - sensor.door_status
+    - sensor.window_status
+familj: 
+  view: no
+  entities:
+   - device_tracker.cjas_iphone_7
+   - device_tracker.micaela
+devicestatus:
+  view: yes
+  icon: mdi:responsive
+  entities:
+    - group.devis
+
+kamera:
+    entities:
+      - camera.koket
+
+kamera2:
+    entities:
+      - camera.clara
+golf:
+    entities:
+      - camera.golf
+
+out:
+    entities:
+      - sensor.yr_temperature
+      - sensor.yr_humidity
+      - sensor.yr_wind_speed
+
+info:
+  name: Hassio Uptime
+  entities:
+    - sensor.cpu_used
+    - sensor.disk_use_
+    - sensor.disk_use_varlog
+    - sensor.ram_used
+    - sensor.ram_available
+    - sensor.swap_use
+    - sensor.swap_free
+    - sensor.last_boot
+    - sensor.since_last_boot
+    - sensor.received_eth1
+    - sensor.sent_eth1
+    - sensor.ssl_certificate_expiry
+
+information:
+  icon: mdi:information-outline
+  view: yes
+  entities:
+   - group.info   
+   - group.snmp_monitor
+   - group.pi_hole
+   - group.links
+spots:
+  entities:
+    - light.hwspot1
+    - light.hwspot2
+    - light.hwspot3
+ned:
+  name: Nedervåning
+  entities:
+   - light.hallway
+   - group.spots
+   - light.kitchen_window
+   - light.livingroom
+   - light.vardagsrum
+upp:
+  name: Övervåning
+  entities:
+   - light.library
+   - switch.sovrumsfonster
+   - light.kontoret
+   - light.upper_hallway
+mys:
+  name: Sänglampor
+  entities:
+   - switch.clara_slinga
+   - switch.nattduksbord_micaela
+   - switch.nattduksbord_calle
+cc:
+  icon: mdi:cast
+  entities:
+   - media_player.arneheds_sovrum
+
+vusolo:
+  name: TV
+  entities:
+   - media_player.65_lg_oled_tv
+   - media_player.vusolo
+   - media_player.vusolo2
+
+vader:
+  name: weather
+  entities:
+   - camera.vader_stockholm
+
+trafik:
+  icon: mdi:road
+  view: yes
+  entities:
+   - group.sl
+   - camera.vag_73_skondal
+   - camera.vag_73_tallkrogen
+   - camera.vag_73_sockenvagen
+television:
+  icon: mdi:television-classic
+  view: yes
+  entities:
+   - group.htpc
+   - group.vusolo
+   - group.cc
+   - media_player.kodi
+
+alarm_status:
+  name: Alarm status
+  entities:
+  - alarm_control_panel.ha_alarm
+  - sensor.siren_status
+brandvarnare:
+  name: Brandvarnare
+  icon: mdi:fire-truck
+  entities:
+  - sensor.siren_bvnere_status
+  - sensor.siren_bvuppe_status
+brandvarnare_batteri:
+  name: Batteri Brandvarnare
+  icon: mdi:battery-charging
+  entities:
+  - sensor.siren_bvnere_battery
+  - sensor.siren_bvuppe_battery
+testa_bv:
+  name: Testa Brandvarnare
+  control: hidden
+  entities:
+  - switch.switch
+  - switch.switch_2
+alarm:
+  name: Alarm
+  icon: mdi:shield
+  view: yes
+  entities:
+  - group.alarm_status
+  - group.doorwindows
+  - group.brandvarnare
+  - group.brandvarnare_batteri
+  - group.testa_bv
+music:
+  icon: mdi:speaker
+  view: yes
+  entities:
+    - group.music_components
+    - group.radio
+music_components:
+  name: Sonos Högtalare
+  control: hidden
+  entities:
+  - input_boolean.group_all_sonos
+  - input_boolean.group_down_sonos
+  - input_boolean.unjoin_all_sonos
+  - media_player.kitchen
+  - media_player.livingroom
+  - media_player.bedroom
+#scenes:
+  #control: hidden
+  #entities:
+    #- scene.all_on
+    #- scene.all_off
+    #- scene.dim_downstairs
+sunon:
+  entities:
+    - light.hallway
+    - light.kitchen_window
+    - light.livingroom
+sunoff:
+  entities:
+    - light.hallway
+    - group.spots
+    - light.kitchen_window
+    - light.livingroom
+htpc:
+  name: 'HTPC'
+  control: hidden
+  entities:
+    - input_select.htpcoptions
+snmp_monitor:
+  name: Bandwith Monitoring
+  view: no
+  entities:
+    - sensor.internet_speed_in
+    - sensor.internet_speed_out
+    - sensor.wan_traffic_in_mean
+    - sensor.wan_traffic_out_mean
+snmp_raw_values:
+  name: SNMP Raw Values
+  view: no
+  entities:
+    - sensor.snmp_wan_in
+    - sensor.snmp_wan_out
+sl:
+  name: SL trafik
+  entities:
+    - sensor.sl_farsta_centrum
+    - sensor.sl_tcentralen
+clara_sleep:
+  name: Sover Clara?
+  entities:
+    - input_boolean.clara_sleep
+pi_hole:
+  name: Pi Hole
+  entities:
+    - sensor.pihole_ads_blocked_today
+    - sensor.pihole_ads_percentage_blocked_today
+    - sensor.pihole_dns_queries_cached
+    - sensor.pihole_dns_queries_forwarded
+    - sensor.pihole_dns_queries_today
+    - sensor.pihole_dns_unique_domains
+    - sensor.pihole_domains_blocked
+links:
+  name: Links
+  icon: mdi:webpack
+  entities:
+  - weblink.asus_rtac68u
+  - weblink.asus_rtac66u
+  - weblink.dlink_932l_kitchen
+  - weblink.dlink_932l_clara
+  - weblink.pihole
+  - weblink.vusolo_nere
+  - weblink.vusolo_uppe
+vadret:
+  icon: mdi:weather-cloudy
+  view: yes
+  entities:
+    - group.vader
+    - group.out
+    - group.golf
+fans:
+  name: Fläktar
+  icon: mdi:fan
+  entities:
+  - switch.fanvardagsrum
+  - switch.balkong
+
+Radio:
+  name: Radio
+  control: hidden
+  entities:
+  - input_select.radio_station
+  - input_select.speakers
+  - input_boolean.radio_play
+  - input_select.radiooptions
+  - weblink.radio_site
+  - weblink.radio_admin

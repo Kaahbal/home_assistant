@@ -1,0 +1,10 @@
+alias: susann_left_visit
+trigger:
+  platform: state
+  entity_id: device_tracker.susannsiphone2
+  from: 'home'
+  to: 'not_home'
+action:
+  service: notify.telegram
+  data:
+    message: 'Susann är inte längre på besök'

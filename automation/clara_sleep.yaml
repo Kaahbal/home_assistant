@@ -1,0 +1,16 @@
+alias: clara_sleep
+initial_state: 'off'
+trigger:
+  platform: state
+  entity_id: light.upper_hallway
+  from: 'off'
+  to: 'on'
+action:
+  - service: notify.telegram
+    data:
+      message: "Movement detected: Upstairs"
+  - service: notify.webos
+    data:
+      message: "Movement detected: Upstairs"
+      data:
+        icon: movement.png

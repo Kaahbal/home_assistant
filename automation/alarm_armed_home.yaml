@@ -1,0 +1,16 @@
+alias: armed_home
+trigger:
+  platform: state
+  entity_id: alarm_control_panel.ha_alarm
+  to: 'armed_home'
+action:
+  - service: homeassistant.turn_on
+    entity_id: switch.housealarm_switch_10_0
+  - service: script.turn_off
+    entity_id: script.alarm_pending_loop
+  - service: script.turn_off
+    entity_id: script.alarm_pending_sound
+  - delay:
+      seconds: 2
+  - service: media_player.sonos_restore
+    entity_id: "media_player.kitchen"

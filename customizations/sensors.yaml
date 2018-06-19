@@ -1,0 +1,74 @@
+sensor.yr_humidity:
+  friendly_name: Luftfuktighet
+  icon: mdi:water-percent
+sensor.yr_symbol:
+  friendly_name: "V\xE4der"
+sensor.yr_temperature:
+  friendly_name: Temperatur
+sensor.cjas_iphone_7_battery_level:
+  friendly_name: Calle Batteri %
+  hidden: true
+sensor.micaela_battery_level:
+  friendly_name: Micaela Batteri %
+  hidden: true
+sensor.micaela_battery_state:
+  friendly_name: Micaela Batteri Status
+  hidden: true
+sensor.cjas_iphone_7_battery_state:
+  friendly_name: Calle Batteri Status
+  hidden: true
+sensor.yr_wind_speed:
+  friendly_name: Vindhastighet
+  icon: mdi:weather-windy-variant
+sensor.cjserver:
+  icon: mdi:plex
+  friendly_name: Plex Server
+  entity_picture: /local/plex.jpg
+  unit_of_measurement: Users
+sensor.since_last_boot:
+  friendly_name: Uptime
+sensor.cpu_use:
+  icon: mdi:heart-pulse
+sensor.door_status:
+  icon: mdi:glassdoor
+sensor.window_status:
+  icon: mdi:office
+sensor.siren_status:
+  icon: mdi:bell-ring-outline
+sensor.download_speed_mean:
+  friendly_name: 'SNMP Download Average'
+  icon: mdi:speedometer
+sensor.upload_speed_mean:
+  friendly_name: 'SNMP Upload Average'
+  icon: mdi:speedometer
+sensor.ping_time_mean:
+  friendly_name: 'SNMP Ping Average'
+  icon: mdi:clock-fast
+sensor.wan_traffic_in_mean:
+  friendly_name: 'WAN Download Average'
+  icon: mdi:download
+sensor.wan_traffic_out_mean:
+  friendly_name: 'WAN Upload Average'
+  icon: mdi:upload
+sensor.internet_speed_in:
+  icon: mdi:speedometer
+sensor.internet_speed_out:
+  icon: mdi:speedometer
+sensor.sl_farsta_centrum:
+  icon: mdi:subway
+  friendly_name: 'Farsta mot City'
+sensor.sl_tcentralen:
+  icon: mdi:subway
+  friendly_name: 'Centralen mot Farsta'
+sensor.siren_bvnere_status:
+  icon: mdi:alert-outline
+  friendly_name: 'Brandvarnare Nere'
+sensor.siren_bvuppe_status:
+  icon: mdi:alert-outline
+  friendly_name: 'Brandvarnare Uppe'
+sensor.siren_bvnere_battery:
+  icon: mdi:battery-charging-50
+  friendly_name: 'Battery BV Nere'
+sensor.siren_bvuppe_battery:
+  icon: mdi:battery-charging-50
+  friendly_name: 'Battery BV Uppe'

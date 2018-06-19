@@ -1,0 +1,9 @@
+alias: clara_sleep_off
+trigger:
+  platform: state
+  entity_id: input_boolean.clara_sleep
+  from: 'on'
+  to: 'off'
+action:
+  service: automation.turn_off
+  entity_id: automation.clara_sleep

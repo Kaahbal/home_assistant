@@ -1,0 +1,10 @@
+alias: madde_left_visit
+trigger:
+  platform: state
+  entity_id: device_tracker.madde
+  from: 'home'
+  to: 'not_home'
+action:
+  service: notify.telegram
+  data:
+    message: 'Madde är inte längre på besök'

@@ -1,0 +1,11 @@
+alias: htpc_shutdown
+trigger:
+  platform: state
+  entity_id: input_select.htpcoptions
+  to: "Shutdown"
+action:
+  - service: shell_command.shutdown_htpc
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.htpcoptions
+      option: Menu

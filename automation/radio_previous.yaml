@@ -1,0 +1,11 @@
+alias: radio_previous
+trigger:
+  platform: state
+  entity_id: input_select.radiooptions
+  to: "Previous"
+action:
+  - service: shell_command.previous_track
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.radiooptions
+      option: Menu

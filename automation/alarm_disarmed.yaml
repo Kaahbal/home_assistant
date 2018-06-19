@@ -1,0 +1,23 @@
+alias: alarm_disarmed
+trigger:
+  platform: state
+  entity_id: alarm_control_panel.ha_alarm
+  to: 'disarmed'
+action:
+  - service: homeassistant.turn_off
+    entity_id: switch.housealarm_switch_10_0
+  - service: script.turn_off
+    entity_id: script.light_loop
+  - service: script.turn_off
+    entity_id: script.light_flash
+  - service: script.turn_off
+    entity_id: script.alarm_photo_loop
+  - service: script.turn_off
+    entity_id: script.alarm_photo
+  - service: script.turn_on
+    entity_id: script.sound_siren_off
+  - service: media_player.sonos_restore
+    entity_id:
+      - media_player.kitchen
+      - media_player.livingroom
+      - media_player.bedroom

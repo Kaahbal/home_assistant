@@ -1,0 +1,9 @@
+platform: asuswrt
+host: !secret ac66u_host
+name: RT-AC66U
+username: !secret ac66u_user
+password: !secret ac66u_password
+mode: ap
+interval_seconds: 10
+consider_home: 180
+track_new_devices: yes

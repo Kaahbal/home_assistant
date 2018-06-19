@@ -1,0 +1,47 @@
+group.arnehed:
+  order: 1
+group.kamera:
+  order: 2
+group.ned:
+  order: 3
+group.kamera2:
+  order: 4
+group.upp:
+  order: 5
+  icon: mdi:lightbulb
+  assumed_state: false
+group.kamera3:
+  order: 6
+group.mys:
+  order: 7
+  icon: mdi:lightbulb
+  assumed_state: false
+group.music:
+  order: 8
+group.television:
+  order: 9
+group.vusolo:
+  order: 10
+group.cc:
+  order: 11
+group.alarm:
+  order: 12
+group.information:
+  order: 13
+group.vadret:
+  order: 14
+group.vader:
+  friendly_name: Stockholm
+  order: 15 
+group.out:
+  friendly_name: "V\xE4der"
+  order: 16
+group.info:
+  order: 17
+group.devicestatus:
+  icon: mdi:server-network
+  order: 18
+group.trafik:
+  order: 19
+group.spots:
+  friendly_name: "Spotlights Hallen"

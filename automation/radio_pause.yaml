@@ -1,0 +1,11 @@
+alias: radio_pause
+trigger:
+  platform: state
+  entity_id: input_select.radiooptions
+  to: "Pause"
+action:
+  - service: shell_command.pause_track
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.radiooptions
+      option: Menu

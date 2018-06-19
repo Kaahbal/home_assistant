@@ -1,0 +1,11 @@
+alias: htpc_restart
+trigger:
+  platform: state
+  entity_id: input_select.htpcoptions
+  to: "Restart"
+action:
+  - service: shell_command.restart_htpc
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.htpcoptions
+      option: Menu

@@ -1,0 +1,10 @@
+alias: paul_visit
+trigger:
+  platform: state
+  entity_id: device_tracker.paul
+  from: 'not_home'
+  to: 'home'
+action:
+  service: notify.telegram
+  data:
+    message: 'Paul är nu på besök'

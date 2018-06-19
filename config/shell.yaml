@@ -1,0 +1,9 @@
+alarm_sound_pending: !secret alarm_sound_pending
+shutdown_htpc: !secret shutdown_htpc
+restart_htpc: !secret restart_htpc
+sleep_htpc: !secret sleep_htpc
+next_track: !secret next_track
+prev_track: !secret prev_track
+play_track: !secret play_track
+stop_track: !secret stop_track
+pause_track: !secret pause_track

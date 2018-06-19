@@ -1,0 +1,10 @@
+alias: astro_online
+trigger:
+  platform: state
+  entity_id: device_tracker.astro
+  from: 'not_home'
+  to: 'home'
+action:
+  service: notify.telegram
+  data:
+    message: 'Astro är nu ONLINE'

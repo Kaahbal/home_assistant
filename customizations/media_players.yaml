@@ -1,0 +1,8 @@
+media_player.arneheds_sovrum:
+  friendly_name: Chromecast sovrum
+media_player.vusolo:
+  friendly_name: Vu+ vardagsrum
+media_player.vusolo2:
+  friendly_name: Vu+ Sovrum
+media_player.philipstv:
+  friendly_name: Chromecast vardagsrum

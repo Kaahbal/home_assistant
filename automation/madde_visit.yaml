@@ -1,0 +1,16 @@
+alias: madde_visit
+trigger:
+  platform: state
+  entity_id: device_tracker.madde
+  from: 'not_home'
+  to: 'home'
+action:
+  - service: notify.telegram
+    data:
+      message: 'Madde är nu på besök'
+  - service: script.turn_on
+    entity_id: script.say
+    data:
+      variables:
+        where: 'kitchen'
+        what: 'Madelene is visiting.'

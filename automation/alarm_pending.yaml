@@ -1,0 +1,9 @@
+alias: alarm_pending
+trigger:
+  platform: state
+  entity_id: alarm_control_panel.ha_alarm
+  from: 'disarmed'
+  to: 'pending'
+action:
+  - service: script.turn_on
+    entity_id: script.alarm_pending_loop_start

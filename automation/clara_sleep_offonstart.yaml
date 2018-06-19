@@ -1,0 +1,8 @@
+alias: 'Set clara_sleep to off on start'
+initial_state: 'on'
+trigger:
+  platform: homeassistant
+  event: start
+action:
+  service: automation.turn_off
+  entity_id: automation.clara_sleep

@@ -1,0 +1,7 @@
+platform: manual
+name: "HA Alarm"
+pending_time: 30
+disarm_after_trigger: false
+trigger_time: 300
+triggered:
+  pending_time: 0

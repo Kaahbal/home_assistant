@@ -1,0 +1,3 @@
+platform: mjpeg
+name: Clara
+mjpeg_url: !secret cam1

@@ -1,0 +1,9 @@
+include:
+  entities:
+    - device_tracker.cjas_iphone_7
+    - device_tracker.micaela
+    - device_tracker.madde
+    - device_tracker.paul
+    - device_tracker.susannsiphone2
+    - sensor.cjserver
+    - alarm_control_panel.ha_alarm

@@ -1,0 +1,11 @@
+alias: htpc_sleep
+trigger:
+  platform: state
+  entity_id: input_select.htpcoptions
+  to: "Sleep"
+action:
+  - service: shell_command.sleep_htpc
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.htpcoptions
+      option: Menu

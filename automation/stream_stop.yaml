@@ -1,0 +1,9 @@
+alias: Stream pause
+trigger:
+  platform: state
+  entity_id: input_boolean.radio_play
+  from: 'on'
+  to: 'off'
+action:
+  service: script.turn_on
+  entity_id: script.radio_stop

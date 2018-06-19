@@ -1,0 +1,17 @@
+alias: "Welcome Home CJA"
+trigger:
+  platform: state
+  entity_id: device_tracker.cjas_iphone_7
+  from: 'not_home'
+  to: 'home'
+condition:
+  - condition: state
+    entity_id: sensor.door_status
+    state: 'Open'
+action:
+  - service: script.turn_on
+    entity_id: script.say
+    data:
+      variables:
+        where: 'kitchen'
+        what: 'Welcome home, Master'

@@ -1,0 +1,51 @@
+switch.clara_slinga:
+  emulated_hue: 'True'
+  icon: mdi:lightbulb
+  assumed_state: false
+  emulated_hue_name: "Clara"
+switch.ovre_hall:
+  emulated_hue: 'True'
+  icon: mdi:lamp
+  assumed_state: false
+  emulated_hue_name: "Upstairs"
+switch.nattduksbord_calle:
+  emulated_hue: 'True'
+  icon: mdi:lamp
+  assumed_state: false
+  emulated_hue_name: "Calle"
+switch.nattduksbord_micaela:
+  emulated_hue: 'True'
+  icon: mdi:lamp
+  assumed_state: false
+  emulated_hue_name: "Micaela"
+switch.sovrumsfonster:
+  emulated_hue: 'True'
+  icon: mdi:lamp
+  assumed_state: false
+  emulated_hue_name: "Bedroom"
+#switch.balkong:
+#  friendly_name: "Balkongen"
+#  emulated_hue: 'True'
+#  icon: mdi:power
+#  assumed_state: false
+#  emulated_hue_name: "Balcony"
+switch.balkong:
+  friendly_name: "Sovrum"
+  icon: mdi:fan
+  assumed_state: false
+  emulated_hue_name: "Fan Bedroom"
+switch.fanvardagsrum:
+  friendly_name: "Vardagsrum"
+  icon: mdi:fan
+  assumed_state: false
+  emulated_hue_name: "Fan livingroom"
+switch.switch:
+  friendly_name: "Brandvarnare Nere"
+  icon: mdi:alarm-bell
+  assumed_state: false
+  emulated_hue_name: "Brandvarnare Nere"
+switch.switch_2:
+  friendly_name: "Brandvarnare Uppe"
+  icon: mdi:alarm-bell
+  assumed_state: false
+  emulated_hue_name: "Brandvarnare Uppe"

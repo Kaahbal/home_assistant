@@ -1,0 +1,11 @@
+alias: alarm_trigger_bv
+trigger:
+  - platform: state
+    entity_id: switch.switch
+    to: 'on'
+  - platform: state
+    entity_id: switch.switch_2
+    to: 'on'
+action:
+  - service: script.turn_on
+    entity_id: script.alarm_bv

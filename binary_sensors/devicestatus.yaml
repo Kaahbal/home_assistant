@@ -1,0 +1,26 @@
+platform: device_tracker_sensor
+entities:
+  - device_tracker.astro
+  - device_tracker.calledator
+  - device_tracker.micaeladator
+  - device_tracker.htpc
+  - device_tracker.lgoledtv
+  - device_tracker.philips46
+  - device_tracker.playstation4pro
+  - device_tracker.sonoskitchen
+  - device_tracker.sonosbedroom
+  - device_tracker.sonoslivingroom
+  - device_tracker.echolivingroom
+  - device_tracker.printer
+  - device_tracker.retropie
+  - device_tracker.rtac66u
+  - device_tracker.rtac68u
+  - device_tracker.telldus
+  - device_tracker.tradfri
+  - device_tracker.vusoloner
+  - device_tracker.vusoloupp
+  - device_tracker.nintendoswitch
+  - device_tracker.chromecast
+  - device_tracker.DLINKCAMKITCHEN
+  - device_tracker.DLINKCAMCLARA
+  - device_tracker.Pihole

@@ -1,0 +1,11 @@
+alias: radio_next
+trigger:
+  platform: state
+  entity_id: input_select.radiooptions
+  to: "Next"
+action:
+  - service: shell_command.next_track
+  - service: input_select.select_option
+    data:
+      entity_id: input_select.radiooptions
+      option: Menu

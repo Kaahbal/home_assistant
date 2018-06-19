@@ -1,0 +1,5 @@
+zone.work:
+  friendly_name: jobb
+  radius: 150
+zone.home:
+  radius: 150

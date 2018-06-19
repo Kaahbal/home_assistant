@@ -1,0 +1,52 @@
+binary_sensor.device_tracker_calledator:
+  icon: mdi:desktop-tower
+binary_sensor.device_tracker_micaeladator:
+  icon: mdi:desktop-tower
+binary_sensor.device_tracker_playstation4pro:
+  icon: mdi:playstation
+binary_sensor.device_tracker_lgoledtv:
+  icon: mdi:television
+binary_sensor.device_tracker_nintendoswitch:
+  icon: mdi:nintendo-switch
+binary_sensor.device_tracker_dlinkcamkitchen:
+  friendly_name: Camera Köket
+  icon: mdi:cctv
+binary_sensor.device_tracker_dlinkcamclara:
+  friendly_name: Camera Clara
+  icon: mdi:cctv
+binary_sensor.device_tracker_chromecast:
+  icon: mdi:cast
+binary_sensor.device_tracker_retropie:
+  icon: mdi:raspberrypi
+binary_sensor.device_tracker_vusoloner:
+  icon: mdi:television-classic
+binary_sensor.device_tracker_vusoloupp:
+  icon: mdi:television-classic
+binary_sensor.device_tracker_astro:
+  icon: mdi:server
+binary_sensor.device_tracker_printer:
+  friendly_name: Printer
+  icon: mdi:printer
+binary_sensor.device_tracker_rtac66u:
+  icon: mdi:access-point-network
+binary_sensor.device_tracker_rtac68u:
+  icon: mdi:router-wireless
+binary_sensor.device_tracker_tradfri:
+  icon: mdi:chip
+binary_sensor.device_tracker_telldus:
+  icon: mdi:chip
+binary_sensor.device_tracker_htpc:
+  icon: mdi:theater
+binary_sensor.telldus_tzdw100_magnet_switch_sensor:
+  friendly_name: "Ytterd\xF6rr"
+  icon: mdi:glassdoor
+binary_sensor.device_tracker_sonoskitchen:
+  icon: mdi:speaker
+binary_sensor.device_tracker_sonosbedroom:
+  icon: mdi:speaker
+binary_sensor.device_tracker_sonoslivingroom:
+  icon: mdi:speaker
+binary_sensor.device_tracker_echolivingroom:
+  icon: mdi:amazon
+binary_sensor.device_tracker_pihole:
+  icon: mdi:web

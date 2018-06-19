@@ -1,0 +1,29 @@
+entities:
+  - name: ASUS RT-AC68U
+    url: !secret ac68u_url
+    icon: mdi:router-wireless
+  - name: ASUS RT-AC66U
+    url: !secret ac66u_url
+    icon: mdi:access-point-network
+  - name: DLINK 932L Kitchen
+    url: !secret 932lkitchen
+    icon: mdi:cctv
+  - name: DLINK 932L Clara
+    url: !secret 932lclara
+    icon: mdi:cctv
+  - name: Pi-Hole
+    url: !secret pi_hole_url
+    icon: mdi:web
+  - name: Vu-Solo Nere
+    url: !secret vu_nere_url
+    icon: mdi:television-classic
+  - name: Vu-Solo Uppe
+    url: !secret vu_uppe_url
+    icon: mdi:television-classic
+  - name: Radio Site
+    url: !secret radio_site
+    icon: mdi:web
+  - name: Radio Admin
+    url: !secret radio_admin
+    icon: mdi:file-document-box
+  

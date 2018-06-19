@@ -1,0 +1,37 @@
+htpcoptions:
+  name: Power
+  options:
+    - Menu
+    - Start
+    - Sleep
+    - Restart
+    - Shutdown
+  initial: Menu
+  icon: mdi:power
+
+radio_station:
+  name: 'Select Radio Station:'
+  options:
+    - Jayan Radio
+  icon: mdi:radio
+
+speakers:
+  name: 'Select Speakers:'
+  options:
+    - Kitchen
+    - Livingroom
+    - Bedroom
+  initial: Kitchen
+  icon: mdi:speaker-wireless
+
+radiooptions:
+  name: RRC
+  options:
+    - Play
+    - Pause
+    - Stop
+    - Previous
+    - Next
+    - Menu
+  initial: Menu
+  icon: mdi:settings

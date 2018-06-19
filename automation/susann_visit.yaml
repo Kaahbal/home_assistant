@@ -1,0 +1,10 @@
+alias: susann_visit
+trigger:
+  platform: state
+  entity_id: device_tracker.susannsiphone2
+  from: 'not_home'
+  to: 'home'
+action:
+  service: notify.telegram
+  data:
+    message: 'Susann är nu på besök'
