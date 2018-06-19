@@ -1,2 +1,5 @@
 # home_assistant
-my hassio setup
+
+My Hassio setup.
+
+readme will be updated when i have time.
