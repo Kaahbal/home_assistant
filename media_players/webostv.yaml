@@ -1,0 +1,20 @@
+platform: webostv
+host: !secret lgtv_host
+name: 65" LG OLED TV
+timeout: 5
+icon: mdi:television
+turn_on_action:
+  service: switch.turn_on
+  data:
+    entity_id: switch.LGTV
+customize:
+  sources:
+    - Digitalbox
+    - HTPC
+    - PS4
+    - SWITCH
+    - Netflix
+    - Viaplay
+    - 'SVT Play Beta'
+    - YouTube
+    - Plex
